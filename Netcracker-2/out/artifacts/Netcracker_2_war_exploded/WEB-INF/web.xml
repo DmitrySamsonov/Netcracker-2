@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+
+    <resource-ref>
+        <res-ref-name>jdbc/carsdb</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+
+
+    <servlet>
+        <servlet-name>ListServlet</servlet-name>
+        <servlet-class>servlets.ListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListServlet</servlet-name>
+        <url-pattern>/ListServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ButtonCreate</servlet-name>
+        <servlet-class>servlets.ButtonCreate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ButtonCreate</servlet-name>
+        <url-pattern>/ButtonCreate</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ButtonAdd</servlet-name>
+        <servlet-class>servlets.ButtonAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ButtonAdd</servlet-name>
+        <url-pattern>/ButtonAdd</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ButtonDelete</servlet-name>
+        <servlet-class>servlets.ButtonDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ButtonDelete</servlet-name>
+        <url-pattern>/ButtonDelete</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ButtonEdit</servlet-name>
+        <servlet-class>servlets.ButtonEdit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ButtonEdit</servlet-name>
+        <url-pattern>/ButtonEdit</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ButtonSave</servlet-name>
+        <servlet-class>servlets.ButtonSave</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ButtonSave</servlet-name>
+        <url-pattern>/ButtonSave</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
